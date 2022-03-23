@@ -24,7 +24,10 @@ git init
 `html git add .`
 
 ### to unstage all file
-`html git reset OR unstage any single file git reset <file-name>`
+`html git reset`
+
+### OR unstage any single file
+`html git reset <file-name>`
 
 4. Commit all the staged file in the master branch
 `html git commit -m "your message" <any single file name> or keep blank for commtting all staged file at once `
