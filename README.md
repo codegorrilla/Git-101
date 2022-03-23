@@ -44,10 +44,46 @@ git reset <file-name> OR git restore --staged <file>
 git commit -m "your message" <any single file name> or keep blank for commtting all staged file at once
 ```
 
-## 5. Now to check the status of the working tree type,
+## 5. Now to check the status of the working tree,
 ```html 
 git status 
 ```
+
+## 6. Once you see the tree is clean, nothing left for commit, set the remote Origin URL
+```html
+git remote add origin <remote_url>
+```
+### to change the remote repo URL into SSH URL do type this command
+```html
+git remote set-url <remote_url> <ssh_remote_url>
+```
+### to change the remote repo URL
+```html
+git remote set-url origin <new_remote_url>
+```
+
+## 7. to push the master from local to the remote repo(origin)
+```html
+git push-u origin master
+```
+### from second time, only use
+```html
+git push <branch_name>
+```
+
+## 8. to create and checkout to a branch use
+```html
+git checkout -b <branch_name>
+```
+## 9. the check all the available branch in both local and origin
+```html
+git branch -a
+```
+OR to check the local branches only
+```html
+git branch
+```
+
 
 
 
