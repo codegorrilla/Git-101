@@ -8,8 +8,8 @@ A test project to test out all common git commands
 
 Configure Git settings in your local machine
 ```html 
-git config global user.name 
-git config global user.email 
+git config global user.name <your name>
+git config global user.email <your email>
 ```
 
 Initialize Git in any of your local repo
