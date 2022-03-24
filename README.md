@@ -64,11 +64,11 @@ git remote set-url origin <new_remote_url>
 
 ## 7. to push the master from local to the remote repo(origin)
 ```html
-git push-u origin master
+git push-u origin master or git push -u origin <branch_name>
 ```
 ### from second time, only use
 ```html
-git push <branch_name>
+git push
 ```
 
 ## 8. to create and checkout to a branch use
@@ -83,9 +83,43 @@ OR to check the local branches only
 ```html
 git branch
 ```
+### know more about branches[#branches], scroll below
+
+
+## 10. to merge a branch from master, first checkout to the specific branch, then
+```html
+git merge master or vice versa
+```
 
 
 
 
 
+# Branches
 
+## to create a branch
+```html
+git branch <branch_name>
+```
+## create a new branch based on some existing branch
+```html
+git branch <new_branch> <base_branch>
+```
+## a new branch from a specific commit
+```html
+git branch <new_branch> <commit_hash_value>
+```
+
+## you can also base your new branch on a specific tag you already have in your repository
+```html
+git branch <new_branch> v1.2
+```
+## to create a new local branch from a remote branch
+```html
+git branch --track <new_branch> origin/<base_branch>
+
+alternatively, if the name of the new branch is same as ther remote base branch
+
+```html
+git checkout --track origin/<base_branch>
+```
