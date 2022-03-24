@@ -117,6 +117,7 @@ git branch <new_branch> v1.2
 ## to create a new local branch from a remote branch
 ```html
 git branch --track <new_branch> origin/<base_branch>
+```
 
 alternatively, if the name of the new branch is same as ther remote base branch
 
