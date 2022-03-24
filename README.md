@@ -55,7 +55,7 @@ git remote add origin <remote_url>
 ```
 ### to change the remote repo URL into SSH URL do type this command
 ```html
-git remote set-url <remote_url> <ssh_remote_url>
+git remote set-url <remote_name> <ssh_remote_url>
 ```
 ### to change the remote repo URL
 ```html
