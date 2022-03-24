@@ -83,7 +83,7 @@ OR to check the local branches only
 ```html
 git branch
 ```
-### know more about branches[#branches], scroll below
+### know more about branches, click here
 
 
 ## 10. to merge a branch from master, first checkout to the specific branch, then
