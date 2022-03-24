@@ -36,7 +36,7 @@ git reset
 
 ### OR unstage any single file
 ```html 
-git reset <file-name> OR git restore --staged <file>
+git reset <file_name> OR git restore --staged <file_name>
 ```
 
 ## 4. Commit all the staged file in the master branch
