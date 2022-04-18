@@ -128,7 +128,7 @@ git checkout --track origin/<base_branch>
 ```html
 git branch -d <local_branch_name>
 ```
-in case if you've any pending commits or merge for the branch, then git won't let you delete the branch, hence in that case use
+in case if you've any pending commits or merge for the branch, then git won't let you delete the branch, hence in that case use to enforce the deletion
 
 ```html
 git branch -D <local_branch_name>
@@ -151,3 +151,21 @@ or to update the set of remote branches in local everytime we run git pull or gi
 ```html
 git config remote.origin.prune true
 ```
+# Additional commands
+
+## to list out all existing git configs use
+```html
+git config --global --list
+```
+
+## to remove all existing git configs use
+```html
+git config --global --unset-all
+```
+or use to individually remove configs
+```html
+git config --global --unset user.name
+git config --global --unset user.email
+```
+
+
