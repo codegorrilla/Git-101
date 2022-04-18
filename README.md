@@ -124,3 +124,30 @@ alternatively, if the name of the new branch is same as ther remote base branch
 ```html
 git checkout --track origin/<base_branch>
 ```
+## to delete a branch
+```html
+git branch -d <local_branch_name>
+```
+in case if you've any pending commits or merge for the branch, then git won't let you delete the branch, hence in that case use
+
+```html
+git branch -D <local_branch_name>
+```
+**_do use this command with caution_**
+
+to delete a branch from the remote repo
+
+```html
+git push origin --delete <remote_branch_name>
+```
+## after deletion/creation of any remote branch, how to update the branches in local
+
+```html
+git fetch --prune
+git pull --prune
+```
+or to update the set of remote branches in local everytime we run git pull or git fetch use
+
+```html
+git config remote.origin.prune true
+```
