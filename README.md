@@ -168,4 +168,21 @@ git config --global --unset user.name
 git config --global --unset user.email
 ```
 
+## Special commands
+
+### you can use separate Git user name and email for separate project folders in your local environment, use by going inside any specific folder
+```html
+git config user.name <your user name>
+```
+
+and type
+```
+git config user.email <your email>
+```
+### in case in local during a merge, the info in the HEAD file is at a mismatch between two branches/ in case when terminal showing can not merge due to unrelated histories,use
+#### for example, we're using main branch from both local and remote repo
+```html
+git pull origin main --allow-unrelated-histories
+git merge origin origin/main
+```
 
