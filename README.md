@@ -1,6 +1,6 @@
-# **Test project**
+# **Codegorrilla Git 101**
 
-A test project to test out all common git commands
+A project to help out my fellow dev friends with popular/special Git commands when they're in real need...
 
 ## Commands used:
 
