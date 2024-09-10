@@ -151,6 +151,29 @@ or to update the set of remote branches in local everytime we run git pull or gi
 ```html
 git config remote.origin.prune true
 ```
+
+While trying to merge a remote branch to a local empty branch(different/same name), in case if Git refuses to merge unrelated histories use the below command as example
+
+```html
+git pull origin master --allow-unrelated-histories
+git merge origin origin/master
+```
+
+in case setting any particular remote branch as an upstream branch of a local one, use the below command
+
+```html
+git pull --set-upstream-to=origin/<branch-name>
+```
+
+Similar commands can be used during push and creating a local branch straightaway as-
+```html
+git push --set-upstream-to=origin/<branch-name> and
+git branch --set-upstream-to=origin/<branch-name> or
+
+git push --set-upstream origin/<branch-name> and
+git branch --set-upstream origin/<branch-name>
+```
+
 # Additional commands
 
 ## to list out all existing git configs use
