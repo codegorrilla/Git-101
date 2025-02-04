@@ -209,7 +209,7 @@ git pull origin main --allow-unrelated-histories
 git merge origin origin/main
 ```
 
-### in case if you're managing sub-folders inside a repo, while doing git push from the parent root folder, if you face any issue, use the below command before doing git push
+### in case if you're managing sub-folders inside a repo, while doing git push from the parent/root folder, if you face any issue, use the below command before doing git push
 ```bash
 git config http.postBuffer 524288000
 ```
